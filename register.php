@@ -102,12 +102,13 @@ body{
                     $nama= $_POST['nama'];
                     $username= $_POST['username'];
                     $password= $_POST['password'];
+                    $email= $_POST['email'];
                     $level = "user";
 
                     include "koneksi.php";
 
-                    $result = mysqli_query($mysqli, "INSERT INTO tabel_pengguna(nama,username,password,Role)
-                    VALUES('$nama','$username','$password','$level')");
+                    $result = mysqli_query($mysqli, "INSERT INTO tabel_pengguna(nama,username,password,Role,email)
+                    VALUES('$nama','$username','$password','$level','$email')");
 
                     header("location:index.php");
             }

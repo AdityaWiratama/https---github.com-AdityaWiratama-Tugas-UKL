@@ -46,6 +46,7 @@ body {
                 <div class="logo"><a href=''>Macam macam baham pangan yang bermanfaat.</a></div>
                 <div class="menu">
                     <ul>
+                        <a href="kalkulatorPupuk.php">Kalkulator Pupuk</a>
                         <li><a href="#home">Home</a></li>
                         <li><a href="#index">index</a></li>
                         <li><a href="#isi">isi</a></li>
