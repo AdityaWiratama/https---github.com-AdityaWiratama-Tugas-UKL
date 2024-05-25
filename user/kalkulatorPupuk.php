@@ -18,8 +18,10 @@ body{
 }
 
 .mainkal{
-    position: absolute;
-    width: 400px;
+    position: center;
+    margin-top: 20px;
+    margin: auto;
+    width: 50%;
     height: 470px;
     background: transparent;
     border: 2px solid rgba(255, 255, 255, .5);
@@ -36,20 +38,18 @@ body{
 
 </style>
 </head>
-<body>
+    <body>
 
-<div class="mainkal">
-<h2>Kalkulator Pupuk</h2>
-<form method="post">
-    <label for="luas_lahan">Luas Lahan (hektar):</label><br>
-    <input type="text" id="luas_lahan" name="luas_lahan" required><br>
-    <label for="dosis_pupuk">Dosis Pupuk per Hektar (kg/hektar):</label><br>
-    <input type="text" id="dosis_pupuk" name="dosis_pupuk" required><br><br>
-    <input type="submit" value="Hitung">
-</form>
-</div>
-
-<?php
+    <div class="mainkal" style="margin-top: 20px;">
+        <h2>Kalkulator Pupuk</h2>
+        <form method="post">
+            <label for="luas_lahan">Luas Lahan (hektar):</label><br>
+            <input type="text" id="luas_lahan" name="luas_lahan" required><br>
+            <label for="dosis_pupuk">Dosis Pupuk per Hektar (kg/hektar):</label><br>
+            <input type="text" id="dosis_pupuk" name="dosis_pupuk" required><br><br>
+            <input type="submit" value="Hitung" >
+            <br>
+            <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $luas_lahan = $_POST["luas_lahan"];
     $dosis_pupuk = $_POST["dosis_pupuk"];
@@ -64,6 +64,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 }
 ?>
-
+        </form>
+    </div>
 </body>
 </html>

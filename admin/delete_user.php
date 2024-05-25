@@ -1,14 +1,19 @@
 <?php
-//include database connection file
-include_once("../koneksi.php");
+include '../koneksi.php';
 
-//Get id from URL to delete that user
-$id = $_GET['id'];
+if (isset($_GET['id'])) {
+    $id = $_GET['id'];
 
-//Delete user row form table based on given id
-$result  = mysqli_query($mysqli, "DELETE FROM user WHERE id=$id");
+    $query = "DELETE FROM akun WHERE id='$id'";
+    $result = mysqli_query($mysqli, $query);
 
-//after delete redirect to home, so that latest user list vill be displayed
-
-header("location:index.php");
+    if ($result) {
+        header("Location: index.php");
+        exit;
+    } else {
+        echo "Error: " . mysqli_error($mysqli);
+    }
+} else {
+    header("Location: index.php");
+}
 ?>

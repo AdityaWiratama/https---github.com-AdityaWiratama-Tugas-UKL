@@ -6,7 +6,7 @@
     <title>Proses teknologi pangan</title>
     <style>
         body {
-            background-color: aquamarine;
+            background-color: lightblue;
         }
     </style>
 </head>
@@ -44,4 +44,3 @@
 <p>7. Pengemasan
     Pada proses pengemasan ini harus dibuat berbeda dan disesuaikan dengan jenis makanan. Hal tersebut bertujuan untuk mencegah kerusakan pangan. Jika produk adalah olahan daging, misalnya sosis atau bakso, maka keseluruhan kemasan harus rapat tanpa adanya udara sedikitpun. Caranya bisa menggunakan vacuum untuk mengatasi kadar oksigen. Kemasan kedap udara bertujuan untuk mencegah adanya kerusakan pada makanan. Begitu juga dengan berbagai bungkusan makanan ringan yang dibuat kembung. Hal tersebut bertujuan agar makanan yang ada di dalamnya tidak hancur. </p>
     <img src="pengemasan.jpeg" alt="pengemasan"width="350">
-    <p><a href="" class="tbl-biru">pelajari lebih lanjut</a></p>

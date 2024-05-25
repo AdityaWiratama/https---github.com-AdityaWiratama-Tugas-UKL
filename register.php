@@ -73,7 +73,7 @@ body{
         <h4>Bergabunglah bersama ribuan orang lainnya...</h4>
         <p>Sudah punya akun? <a href="login.php">Login di sini</a></p>
 
-        <form action="" method="POST">
+        <form action="register.php" method="post">
 
             <div class="form-group">
                 <label for="name">Nama Lengkap</label>
@@ -94,27 +94,33 @@ body{
                 <label for="password">Password</label>
                 <input class="form-control" type="password" name="password" placeholder="Password" />
             </div>
+            <select name="Role" id="">
+                <option value="user">User</option>
+                <option value="admin">Admin</option>
+            </select>
 
-            <button class="btn btn-success btn-block" name="register" value="Daftar" > register </button>
-
-            <?php
-                if(isset($_POST['register'])) {
-                    $nama= $_POST['nama'];
-                    $username= $_POST['username'];
-                    $password= $_POST['password'];
-                    $email= $_POST['email'];
-                    $level = "user";
-
-                    include "koneksi.php";
-
-                    $result = mysqli_query($mysqli, "INSERT INTO tabel_pengguna(nama,username,password,Role,email)
-                    VALUES('$nama','$username','$password','$level','$email')");
-
-                    header("location:index.php");
-            }
-            ?>     </form>
-        <div class="login-link">
-        </div>
+            <button class="btn btn-success btn-block" type="Submit" name="Submit" value="Submit"> register </button>
+     </form>
     </div>
+
+<?php
+if (isset($_POST['Submit'])) {
+    
+    $nama = $_POST ['nama'];
+    $username = $_POST ['username'];
+    $email = $_POST ['email'];
+    $password = $_POST ['password'];
+    $Role = $_POST ['Role'];
+    
+    include_once('koneksi.php');
+
+$query_sql = mysqli_query($mysqli,"INSERT INTO akun (nama, username, email, password, Role)
+VALUES('$nama', '$username', '$email', '$password', '$Role')");
+
+header("location:index.php");
+
+}
+?>
+
     </body>
     </html>

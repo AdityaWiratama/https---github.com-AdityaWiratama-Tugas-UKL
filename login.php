@@ -6,7 +6,7 @@ include 'koneksi.php';
 $username = $_POST['user'];
 $password = $_POST['pass'];
 
-$login = mysqli_query($mysqli,"select * from tabel_pengguna where username='$username' and password='$password'");
+$login = mysqli_query($mysqli,"select * from akun where username='$username' or password='$password'");
 $cek = mysqli_num_rows($login);
 
 if($cek > 0){
