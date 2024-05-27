@@ -28,11 +28,11 @@ if($cek > 0){
         $_session['username'] = $username;
         $_session['Role'] = "user";
         //alihkan ke halaman login kembali
-        header("location:user/userlogin.php");
+        header("location:user/Landing_Page.php");
 
     }else{
         //alihkan ke halaman login
-        header("location:userlogin.php");
+        header("location:Landing_Page.php");
     }
 }else{
     header("location:index.php?pesan=gagal");
