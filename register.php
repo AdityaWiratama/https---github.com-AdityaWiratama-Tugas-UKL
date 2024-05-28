@@ -15,7 +15,7 @@
         }
         body {
             height: 100vh;
-            background-image: url('https://images.unsplash.com/photo-1615391542887-c579ed3c674e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fHwxNjk1NzUyMzI0&ixlib=rb-4.0.3&q=80&w=1080');
+            background-image: url('https://images.unsplash.com/photo-1524985069026-dd778a71c7b4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fHwxNjk1NzUyMzI0&ixlib=rb-4.0.3&q=80&w=1080');
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
