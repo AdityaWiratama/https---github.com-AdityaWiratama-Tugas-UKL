@@ -50,6 +50,7 @@ body{
             <input type="submit" value="Hitung" >
             <br>
             <?php
+            
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $luas_lahan = $_POST["luas_lahan"];
     $dosis_pupuk = $_POST["dosis_pupuk"];

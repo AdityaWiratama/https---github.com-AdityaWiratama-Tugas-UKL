@@ -123,7 +123,7 @@
     </section>
 
     <section id="products" class="products">
-        <h2>Produk Kami</h2>
+        <h2>contoh produk</h2>
         <div class="product-list">
             <div class="product-item">
                 <img src="beras.jpg" alt="Beras">

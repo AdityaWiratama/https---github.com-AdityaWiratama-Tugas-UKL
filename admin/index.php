@@ -106,14 +106,16 @@ button:hover {
 </head>
 <body>
 <a href="create_table.php"><button>create Table</button></a>
+<a href="kalkulator_pupuk.php"><button>kalkulator pupuk</button></a>
 <table border="1" class="table">
     <tr>
         <th>id</th>
         <th>username</th>
+        <th>nomor</th>
         <th>email</th>
-        <th>password</th>
-        <th>Role</th>
+        <th>password</th>:
         <th>nama</th>
+        <th>role</th>
     </tr>
     
     <?php
