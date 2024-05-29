@@ -16,6 +16,7 @@
             background-color: blue;
             text-decoration: none;
             border-radius: 5px;
+            margin-right: 10px;
         }
 
         .wrapper {
@@ -99,7 +100,10 @@
         Sekarang sudah tahu kan pentingnya mengonsumsi makanan sehat dan bergizi setiap harinya? Yuk mulai perbaiki gaya hidup dengan memilih menu yang lebih sehat dan rutin menjalani olahraga. Kamu juga bisa mengonsumsi Realfood Up untuk menambah energi dan kesegaran setiap harinya. Mengandung sarang burung walet, Realfood Up dibuat secara khusus bagi kamu para milenial dan Gen Z yang sedang mencari alternatif tren minuman yang lebih baik bagi tubuh.</p>
         <img src="gambar teh hijau.jpg" alt="teh hijau">
 
-        <p><a href="index(4).php" class="tbl-biru">HALAMAN SELANJUTNYA</a></p>
+        <p>
+            <a href="javascript:history.back()" class="tbl-biru">BACK</a>
+            <a href="index(4).php" class="tbl-biru">HALAMAN SELANJUTNYA</a>
+        </p>
     </div>
 </body>
 </html>

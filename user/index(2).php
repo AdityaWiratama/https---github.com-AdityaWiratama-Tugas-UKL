@@ -16,6 +16,7 @@
             background-color: blue;
             text-decoration: none;
             border-radius: 5px;
+            margin-right: 10px;
         }
 
         .wrapper {
@@ -77,7 +78,10 @@
         <p>- Usia 50-an<br>
         Wanita di usia ini memiliki risiko penyakit kardiovaskular yang semakin tinggi. Kekurangan hormon estrogen bisa membuat wanita berpeluang mengalami penyakit jantung. Oleh sebab itu para ahli menganjurkan wanita di usia 50-an untuk rajin memonitor tekanan darah, berat badan, dan kadar kolesterol. Selain itu, para ahli juga menyarankan untuk rutin mengonsumsi kedelai, tahu, dan kacang-kacangan agar efek samping menopause berkurang. Akan lebih baik lagi, bila kamu juga rutin mengonsumsi susu agar terhindar dari osteoporosis.</p>
 
-        <p><a href="index(3).php" class="tbl-biru">HALAMAN SELANJUTNYA</a></p>
+        <p>
+            <a href="javascript:history.back()" class="tbl-biru">BACK</a>
+            <a href="index(3).php" class="tbl-biru">HALAMAN SELANJUTNYA</a>
+        </p>
     </div>
 </body>
 </html>

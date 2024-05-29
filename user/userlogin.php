@@ -102,6 +102,7 @@
             background-color: blue;
             text-decoration: none;
             border-radius: 5px;
+            margin-right: 10px;
         }
     </style>
 </head>
@@ -155,7 +156,10 @@
         <h1>Manfaat mengkonsumsi makanan / bahan pangan yang bermanfaat dan sehat</h1>
         <p>Menjaga tubuh dari berbagai penyakit tidak menular, seperti penyakit jantung, diabetes, dan kanker</p>
         <img src="gambar manfaat sayur sayuran.png" alt="gambar manfaat sayur sayuran" class="small-image">
-        <p><a href="index(2).php" class="tbl-biru">HALAMAN SELANJUTNYA</a></p>
+        <p>
+            <a href="javascript:history.back()" class="tbl-biru">BACK</a>
+            <a href="index(2).php" class="tbl-biru">HALAMAN SELANJUTNYA</a>
+        </p>
     </div>
 </body>
 </html>
