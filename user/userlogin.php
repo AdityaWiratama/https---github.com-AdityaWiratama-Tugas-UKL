@@ -1,9 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
+<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Macam macam teknologi pangan yang bermanfaat.</title>
+    <title>Macam-Macam Teknologi Pangan yang Bermanfaat</title>
     <link rel="stylesheet" href="style.css">
     <style>
         body, html {
@@ -11,22 +8,21 @@
             padding: 0;
             height: 100%;
             width: 100%;
-        }
-
-        body {
-            background-color: lightblue;
             font-family: Arial, sans-serif;
         }
 
-        .kolom img {
-            width: 200px;
-            height: 200px;
+        body {
+            background-color: #e3f2fd;
+            color: #333;
         }
 
         .menu {
             width: 100%;
             background-color: #0056b3;
             padding: 10px 0;
+            position: fixed;
+            top: 0;
+            z-index: 1000;
         }
 
         .menu ul {
@@ -55,10 +51,20 @@
             border-radius: 5px;
         }
 
+        .wrapper {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding-top: 60px; /* To offset the fixed navbar */
+        }
+
         #home {
             position: relative;
-            height: 100vh; /* Viewport Height: 100% of the viewport height */
+            height: 100vh;
             width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             overflow: hidden;
         }
 
@@ -68,98 +74,157 @@
             left: 0;
             height: 100%;
             width: 100%;
-            object-fit: cover; /* This ensures the image covers the whole area without stretching */
+            object-fit: cover;
+            z-index: -1;
         }
 
         #home .kolom {
-            position: relative;
-            z-index: 1;
-            background-color: rgba(255, 255, 255, 0.7); /* Optional: Semi-transparent background for text readability */
+            background-color: rgba(255, 255, 255, 0.8);
             padding: 20px;
-            box-sizing: border-box;
+            max-width: 600px;
+            border-radius: 10px;
+            text-align: center;
         }
 
-        .deskripsi, h2, p {
-            margin: 0;
-            padding: 10px 0;
+        #home .kolom h2 {
+            margin-top: 20px;
         }
 
-        .wrapper {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
+        section {
+            padding: 60px 0;
+        }
+
+        section h2 {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        section p {
+            text-align: justify;
+            line-height: 1.6;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .grid-container img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
         }
 
         .small-image {
-            width: 50px;
-            height: 50px;
+            width: 150px;
+            height: auto;
+            display: block;
+            margin: 0 auto;
         }
 
         .tbl-biru {
             display: inline-block;
             padding: 10px 20px;
             color: white;
-            background-color: blue;
+            background-color: #0056b3;
             text-decoration: none;
             border-radius: 5px;
-            margin-right: 10px;
+            margin: 20px 10px 0 10px;
+            transition: background-color 0.3s;
+        }
+
+        .tbl-biru:hover {
+            background-color: #003f7f;
+        }
+
+        .button-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #0056b3;
+            color: white;
+            font-size: 12px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
         }
     </style>
 </head>
 <body>
-    <nav>
-        <div class="wrapper">
-            <div class="menu">
-                <ul>
-                    <li><a href="kalkulatorPupuk.php">Kalkulator Pupuk</a></li>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#index">Index</a></li>
-                    <li><a href="#isi">Isi</a></li>
-                    <li><a href="#courses">Courses</a></li>
-                    <li><a href="" class="tbl-biru">Sign Up</a></li>
-                </ul>
-            </div>
-        </div>
+    <nav class="menu">
+        <ul>
+            <li><a href="kalkulatorPupuk.php">Kalkulator Pupuk</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#index">Index</a></li>
+            <li><a href="#isi">Isi</a></li>
+            <li><a href="#courses">Courses</a></li>
+            <li><a href="#">Sign Up</a></li>
+        </ul>
     </nav>
     <div class="wrapper">
         <!-- untuk home -->
         <section id="home">
-            <img src="teknologi-pangan.jpg" alt="teknologi pangan">
+            <img src="teknologi-pangan.jpg" alt="Teknologi Pangan">
             <div class="kolom">
-                <p class="deskripsi">Website Teknologi pangan adalah sebuah website yang merekomendasikan beberapa bahan pangan yang baik dan bermanfaat bagi tubuh
-                    dan beberapa cara pengolahan maupun pengemasan yang baik dan steril.
-                </p>
+                <h2>Website Teknologi Pangan</h2>
+                <p class="deskripsi">Website ini merekomendasikan beberapa bahan pangan yang baik dan bermanfaat bagi tubuh serta beberapa cara pengolahan maupun pengemasan yang baik dan steril.</p>
                 <p class="deskripsi">Berbagai macam bahan pangan dan teknologi</p>
-                <h2>Macam bahan pangan dan teknologi</h2>
-                <p>Semua jenis bahan yang dapat digunakan sebagai bahan makanan yang bersifat aman, memiliki palatabilitas, dan menyehatkan bagi manusia.</p>
             </div>
         </section>
 
         <section id="courses">
-            <div class="kolom">
-                <h2>Macam macam bahan pangan</h2>
-                <p>1. Sayuran: Sayuran adalah salah satu jenis makanan sehat karena tentunya kaya akan nutrisi dan gizi yang baik untuk kesehatan tubuh...</p>
-                <img src="Manfaat-Kesehatan-Sayur-Pakcoy-yang-Perlu-Kamu-Ketahui-1024x683.jpg" alt="gambar sayuran">
-                <p>2. Buah: Sama seperti sayur, buah juga jenis makanan sehat yang mengandung banyak nutrisi dan gizi untuk kesehatan tubuh...</p>
-                <img src="gambar buah.jpg" alt="gambar buah">
-                <p>3. Kacang-kacangan dan biji-bijian: Jenis makanan sehat lainnya adalah kacang-kacangan dan biji-bijian...</p>
-                <img src="gambar kacang dan biji bijian.jpeg" alt="gambar kacang dan biji-bijian">
-                <p>4. Makanan laut dan berbagai jenis ikan: Jenis makanan sehat ini tentu dikenal karena kaya akan protein...</p>
-                <img src="gambar makanan laut.jpg" alt="gambar makanan laut">
-                <p>5. Daging dan telur: Daging dan telur juga termasuk jenis makanan sehat yang kaya dengan protein...</p>
-                <img src="gambar daging dan telur.webp" alt="gambar daging dan telur">
-                <p>6. Susu dan produk olahannya: Jika mengingat semboyan 4 sehat 5 sempurna, maka sudah pasti susu adalah salah satu jenis makanan sehat...</p>
-                <img src="gambar susu.png" alt="gambar susu dan olahraga">
+            <h2>Macam-Macam Bahan Pangan</h2>
+            <div class="grid-container">
+                <div>
+                    <h3>Sayuran</h3>
+                    <p>Sayuran adalah salah satu jenis makanan sehat karena kaya akan nutrisi dan gizi yang baik untuk kesehatan tubuh.</p>
+                    <img src="Manfaat-Kesehatan-Sayur-Pakcoy-yang-Perlu-Kamu-Ketahui-1024x683.jpg" alt="Gambar Sayuran">
+                </div>
+                <div>
+                    <h3>Buah</h3>
+                    <p>Buah mengandung banyak nutrisi dan gizi untuk kesehatan tubuh, sama seperti sayur.</p>
+                    <img src="gambar buah.jpg" alt="Gambar Buah">
+                </div>
+                <div>
+                    <h3>Kacang-Kacangan dan Biji-Bijian</h3>
+                    <p>Kacang-kacangan dan biji-bijian adalah jenis makanan sehat yang kaya akan nutrisi.</p>
+                    <img src="gambar kacang dan biji bijian.jpeg" alt="Gambar Kacang dan Biji-Bijian">
+                </div>
+                <div>
+                    <h3>Makanan Laut</h3>
+                    <p>Makanan laut dan berbagai jenis ikan dikenal karena kaya akan protein.</p>
+                    <img src="gambar makanan laut.jpg" alt="Gambar Makanan Laut">
+                </div>
+                <div>
+                    <h3>Daging dan Telur</h3>
+                    <p>Daging dan telur kaya akan protein yang penting untuk kesehatan tubuh.</p>
+                    <img src="gambar daging dan telur.webp" alt="Gambar Daging dan Telur">
+                </div>
+                <div>
+                    <h3>Susu dan Produk Olahannya</h3>
+                    <p>Susu adalah bagian dari semboyan 4 sehat 5 sempurna dan penting untuk kesehatan.</p>
+                    <img src="gambar susu.png" alt="Gambar Susu dan Produk Olahannya">
+                </div>
             </div>
         </section>
 
-        <h1>Manfaat mengkonsumsi makanan / bahan pangan yang bermanfaat dan sehat</h1>
-        <p>Menjaga tubuh dari berbagai penyakit tidak menular, seperti penyakit jantung, diabetes, dan kanker</p>
-        <img src="gambar manfaat sayur sayuran.png" alt="gambar manfaat sayur sayuran" class="small-image">
-        <p>
-            <a href="javascript:history.back()" class="tbl-biru">BACK</a>
-            <a href="index(2).php" class="tbl-biru">HALAMAN SELANJUTNYA</a>
-        </p>
+        <section>
+            <h1>Manfaat Mengkonsumsi Makanan Sehat</h1>
+            <p>Menjaga tubuh dari berbagai penyakit tidak menular, seperti penyakit jantung, diabetes, dan kanker.</p>
+            <img src="gambar manfaat sayur sayuran.png" alt="Gambar Manfaat Sayur Sayuran" class="small-image">
+            <div class="button-container">
+                <a href="javascript:history.back()" class="tbl-biru">BACK</a>
+                <a href="index(2).php" class="tbl-biru">HALAMAN SELANJUTNYA</a>
+            </div>
+        </section>
     </div>
+    <footer>
+        <p>&copy; 2024 Teknologi Pangan. All rights reserved.</p>
+    </footer>
 </body>
 </html>

@@ -5,7 +5,7 @@ include("../koneksi.php");
 //cek apakah tombol simpan sudah diklik atau blum?
 if(isset($_POST['simpan'])){
 
-    $ID = $_POST['ID_user'];
+
     $Nama = $_POST['Nama'];
     $username = $_POST['username'];
     $password = $_POST['password'];

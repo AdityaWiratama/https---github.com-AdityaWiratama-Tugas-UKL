@@ -3,39 +3,117 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proses teknologi pangan</title>
+    <title>Proses Teknologi Pangan</title>
     <style>
         body {
-            background-color: lightblue;
+            background-color: #f0f8ff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
         }
-        .tbl-biru {
-            display: inline-block;
-            padding: 10px 20px;
-            color: white;
-            background-color: blue;
-            text-decoration: none;
-            border-radius: 5px;
-            margin-bottom: 20px;
+        .wrapper {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            margin-top: 20px;
         }
         h1 {
-            color: darkblue;
+            color: #0056b3;
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 24px;
         }
         p {
             font-size: 16px;
-            line-height: 1.5;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            text-align: justify;
         }
         img {
             width: 100%;
             height: auto;
             max-width: 350px;
             display: block;
-            margin: 10px 0;
+            margin: 10px auto;
+            border-radius: 10px;
+        }
+        .tbl-biru {
+            display: inline-block;
+            padding: 10px 20px;
+            color: white;
+            background-color: #0056b3;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 20px 10px;
+            transition: background-color 0.3s;
+        }
+        .tbl-biru:hover {
+            background-color: #003f7f;
+        }
+        .button-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+        footer {
+            background-color: #0056b3;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+            border-radius: 0 0 10px 10px;
+        }
+        footer p {
+            margin: 0;
+            font-size: 14px;
+        }
+        .menu {
+            width: 100%;
+            background-color: #0056b3;
+            padding: 10px 0;
+        }
+        .menu ul {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        .menu li {
+            margin: 0 15px;
+        }
+        .menu a {
+            text-decoration: none;
+            color: white;
+            padding: 10px 15px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .menu a:hover {
+            background-color: white;
+            color: #0056b3;
+            border-radius: 5px;
         }
     </style>
 </head>
 <body>
+    <header class="menu">
+        <nav>
+            <ul>
+                <li><a href="kalkulatorPupuk.php">Kalkulator Pupuk</a></li>
+                <li><a href="index.php">Home</a></li>
+                <li><a href="about.php">Tentang Kami</a></li>
+                <li><a href="products.php">Produk</a></li>
+                <li><a href="contact.php">Kontak</a></li>
+                <li><a href="signup.php">Sign Up</a></li>
+                <li><a href="../index.php">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
     <div class="wrapper">
-        <h1>Proses teknologi pangan dalam menghasilkan bahan pangan</h1>
+        <h1>Proses Teknologi Pangan dalam Menghasilkan Bahan Pangan</h1>
 
         <p>1. Sortasi<br>
             Proses pertama yang harus dilakukan untuk menghasilkan makanan yang layak konsumsi adalah pemilihan bahan makanan yang nantinya akan diolah. Produk yang nantinya akan dihasilkan dapat memiliki kualitas terbaik jika bahan mentah yang dipilih adalah produk terbaik, utuh, dan juga terjamin. Misalnya, saat pemilihan biji kopi akan dilakukan berdasarkan perbedaan proses perendaman atau dibedakan dari warnanya. Pemilihan biji kopi yang dilakukan berdasarkan warnanya biasanya akan disortir menggunakan mesin khusus yang sudah dilengkapi dengan sensor warna. Sedangkan pada proses perendaman, biji kopi yang masih mengapung akan dipisahkan dengan biji kopi yang terendam. Adapun contoh lain yaitu saat proses pemilihan buah nanas, biasanya akan disortir berdasarkan ukuran untuk memasuki proses pengalengan.
@@ -72,9 +150,12 @@
         </p>
         <img src="pengemasan.jpeg" alt="pengemasan" width="350">
 
-        <p>
-            <a href="javascript:history.back()" class="tbl-biru">BACK</a>
-        </p>
-    </div>
+        <div class="button-container">
+            <a href="javascript:history.back()" class="tbl-biru">KEMBALI</a> 
+        </div> 
+    </div> 
+    <footer> 
+        <p>© 2024 Teknologi Pangan. Hak Cipta Dilindungi Undang-Undang.</p> 
+    </footer>
 </body>
 </html>

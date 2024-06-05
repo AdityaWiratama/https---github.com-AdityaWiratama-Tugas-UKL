@@ -110,10 +110,12 @@
         <nav>
             <h1>Bahan Pangan dan Teknologi</h1>
             <ul>
+                <li><a href="kalkulatorPupuk.php">Kalkulator Pupuk</a></li>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">Tentang Kami</a></li>
                 <li><a href="#products">Produk</a></li>
                 <li><a href="#contact">Kontak</a></li>
+                <li><a href="#">Sign Up</a></li>
             </ul>
         </nav>
     </header>

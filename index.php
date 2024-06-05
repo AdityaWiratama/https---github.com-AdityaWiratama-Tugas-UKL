@@ -14,7 +14,7 @@
 }
 body{
     height: 100vh;
-    background-image: url(https://kuliahdimana.id/public/news/93fde88731f0a6e723004a54a7a9475e.jpg);
+    background-image: url(background.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -64,15 +64,16 @@ body{
 </head>
 <body>
     <div class="container">
-        <h1 class="title">login Your Akun</h1><br>
+        <h1 class="title">Login ke Akun Kamu</h1><br>
         <form class="form" action="login.php" method="post">
             <input type="text" name="user" placeholder="username">
             <input type="password" name="pass" placeholder="password">
-                <button>Login</button>
+            <button>Login</button>
         </form>
-    <div class="Forgot">
-        <a href="#">Register</a> <a href="#">Forgot password</a>
-         </div>
-    </div>   
+
+        <div class="Forgot">
+            <a href="register.php">Register</a> <a href="#">Forgot password</a>
+        </div>
+    </div>
 </body>
 </html>

@@ -9,7 +9,7 @@ if (isset($_POST['submit'])) {
     
     include_once('koneksi.php');
 
-$query_sql = mysqli_query($mysqli,"INSERT INTO akun_2(nama, username, email, password, level)
+$query_sql = mysqli_query($mysqli,"INSERT INTO akun(nama, username, email, password, level)
 VALUES('$nama', '$username', '$email', '$password', '$level')");
 
 header("location:index.php");
