@@ -74,19 +74,11 @@
             <h1>Create Kalkulator Pupuk</h1>
             <form action="insert_kalkulator.php" method="post">
                 <div>
-                    <label>ID kalkulator</label>
-                    <input type="text" name="id" required>
-                </div>
-                <div>
-                    <label>ID user</label>
-                    <input type="text" name="id_user" required>
-                </div>
-                <div>
-                    <label>luas lahan</label>
+                    <label>Luas Lahan</label>
                     <input type="text" name="luas_lahan" required>
                 </div>
                 <div>
-                    <label>Banyak pupuk</label>
+                    <label>Banyak Pupuk</label>
                     <input type="text" name="banyak_pupuk" required>
                 </div>
                 <div>

@@ -1,40 +1,38 @@
 <?php
-//mengaktifkan session pada php
+// Mengaktifkan sesi pada PHP
 session_start();
 include 'koneksi.php';
 
+// Mendapatkan input dari formulir login
 $username = $_POST['user'];
 $password = $_POST['pass'];
 
-$login = mysqli_query($mysqli,"SELECT * FROM `akun` WHERE username='adit' AND password='admin';");
+// Melakukan query untuk memeriksa username dan password
+$login = mysqli_query($mysqli, "SELECT * FROM `akun` WHERE username='$username' AND password='$password'");
 $cek = mysqli_num_rows($login);
 
-if($cek > 0){
-
+if ($cek > 0) {
     $data = mysqli_fetch_array($login);
 
-    // cek jika user login sebagai admin
-    if($data['Role'] == 'admin'){
-
-        // buat session login dan username
-        $_session['username'] = $username;
-        $_session['Role'] = "admin";
-        //alihkan ke halaman dashboard admin
-        header("location:admin/index.php");
-    //cek jika user login sebagai user
-    }else if($data['Role'] == 'user'){
-        //buat session login dan username
-        $_session['username'] = $username;
-        $_session['Role'] = "user";
-        //alihkan ke halaman login kembali
-        header("location:user/Landing_Page.php");
-
+    // Cek jika user login sebagai admin
+    if ($data['Role'] == 'admin') {
+        // Buat sesi login dan username
+        $_SESSION['username'] = $username;
+        $_SESSION['Role'] = 'admin';
+        // Alihkan ke halaman dashboard admin
+        header("Location: admin/index.php");
+        exit;
+    } else if ($data['Role'] == 'user') {
+        // Buat sesi login dan username
+        $_SESSION['username'] = $username;
+        $_SESSION['Role'] = 'user';
+        // Alihkan ke halaman user
+        header("Location: user/Landing_Page.php");
+        exit;
     }
-    // }else{
-    //     //alihkan ke halaman login
-    //     header("location:Landing_Page.php");
-    // }
-}else{
-    header("location:index.php?pesan=gagal");
+} else {
+    // Jika login gagal, alihkan kembali ke halaman login dengan pesan gagal
+    header("Location: index.php?pesan=gagal");
+    exit;
 }
 ?>

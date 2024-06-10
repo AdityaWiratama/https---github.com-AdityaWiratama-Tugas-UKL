@@ -12,7 +12,7 @@ if(isset($_POST['simpan'])){
 
     // buat query update
     $result= mysqli_query($mysqli,"UPDATE kalkulator_pupuk set id_user='$id_user' , luas_lahan='$luas_lahan' , banyak_pupuk='$banyak_pupuk' where id=$id");
-    header( 'Location: ../index.php');
+    header( 'Location: kalkulator_pupuk.php');
 } else {
     die("Akses dilarang...");
 }

@@ -119,12 +119,8 @@
     <header class="menu">
         <nav>
             <ul>
-                <li><a href="kalkulatorPupuk.php">Kalkulator Pupuk</a></li>
-                <li><a href="index.php">Home</a></li>
-                <li><a href="about.php">Tentang Kami</a></li>
-                <li><a href="products.php">Produk</a></li>
-                <li><a href="contact.php">Kontak</a></li>
-                <li><a href="signup.php">Sign Up</a></li>
+            <li><a href="kalkulatorPupuk.php">Kalkulator Pupuk</a></li>
+                <li><a href="userlogin.php">Artikel</a></li>
                 <li><a href="../index.php">Logout</a></li>
             </ul>
         </nav>

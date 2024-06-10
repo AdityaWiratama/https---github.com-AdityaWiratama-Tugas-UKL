@@ -111,11 +111,8 @@
             <h1>Bahan Pangan dan Teknologi</h1>
             <ul>
                 <li><a href="kalkulatorPupuk.php">Kalkulator Pupuk</a></li>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">Tentang Kami</a></li>
-                <li><a href="#products">Produk</a></li>
-                <li><a href="#contact">Kontak</a></li>
-                <li><a href="#">Sign Up</a></li>
+                <li><a href="userlogin.php">Artikel</a></li>
+                <li><a href="../index.php">Logout</a></li>
             </ul>
         </nav>
     </header>
@@ -125,7 +122,7 @@
     </section>
 
     <section id="products" class="products">
-        <h2>contoh produk</h2>
+        <h2>Contoh Produk</h2>
         <div class="product-list">
             <div class="product-item">
                 <img src="beras.jpg" alt="Beras">
@@ -143,7 +140,6 @@
                 <p>Buah-buahan pilihan dengan rasa yang manis dan segar.</p>
             </div>
         </div>
-        <p><a href="userlogin.php" class="tbl-biru">HALAMAN SELANJUTNYA</a></p>
     </section>
 
     <section id="contact" class="contact">

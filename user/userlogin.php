@@ -159,11 +159,8 @@
     <nav class="menu">
         <ul>
             <li><a href="kalkulatorPupuk.php">Kalkulator Pupuk</a></li>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#index">Index</a></li>
-            <li><a href="#isi">Isi</a></li>
-            <li><a href="#courses">Courses</a></li>
-            <li><a href="#">Sign Up</a></li>
+            <li><a href="userlogin.php">Artikel</a></li>
+            <li><a href="../index.php">Logout</a></li>
         </ul>
     </nav>
     <div class="wrapper">

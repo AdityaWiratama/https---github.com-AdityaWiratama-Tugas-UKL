@@ -7,7 +7,7 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-image: url('https://images.unsplash.com/photo-1582735680197-d8f6b1bfc016?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80'); /* Background image from Unsplash */
+            background-image: url('https://www.toptal.com/designers/subtlepatterns/uploads/double-bubble-dark.png'); 
             background-size: cover;
             background-attachment: fixed;
             background-repeat: no-repeat;
@@ -21,7 +21,7 @@
             margin: 20px 0;
             font-size: 18px;
             text-align: left;
-            background-color: rgba(255, 255, 255, 0.9); /* Slight transparency for table background */
+            background-color: rgba(255, 255, 255, 0.9); 
         }
 
         th, td {
@@ -53,22 +53,22 @@
         }
 
         button.create {
-            background-color: #4CAF50; /* Green */
+            background-color: #4CAF50; 
             color: white;
         }
 
         button.read {
-            background-color: #2196F3; /* Blue */
+            background-color: #2196F3; 
             color: white;
         }
 
         button.update {
-            background-color: #ff9800; /* Orange */
+            background-color: #ff9800; 
             color: white;
         }
 
         button.delete {
-            background-color: #f44336; /* Red */
+            background-color: #f44336; 
             color: white;
         }
 
@@ -111,44 +111,63 @@
         }
 
         .edit a {
-            background-color: #ff9800; /* Orange */
+            background-color: #ff9800; 
         }
 
         .delete a {
-            background-color: #f44336; /* Red */
+            background-color: #f44336; 
         }
 
         .edit a:hover, .delete a:hover {
             opacity: 0.8;
         }
+
+        .navigation {
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .navigation a {
+            padding: 10px 15px;
+            text-decoration: none;
+            background-color: #2196F3;
+            color: white;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .navigation a:hover {
+            background-color: #1976D2;
+        }
     </style>
 </head>
 <body>
-    <a href="create_kalkulator.php"><button class="create">Create table</button></a>
+    <div class="navigation">
+        <a href="create_kalkulator.php" class="create">Create Table</a>
+        <a href="../index.php" class="read">Logout</a>
+    </div>
+
     <table border="1" class="table">
         <tr>
-            <th>id</th>
-            <th>id_user</th>
-            <th>luas_lahan</th>
-            <th>Banyak_pupuk</th>
-            <th>actions</th>
+            <th>Luas Lahan</th>
+            <th>Banyak Pupuk</th>
+            <th>Actions</th>
         </tr>
         
         <?php
         // Include the database connection
-        include '../Koneksi.php';
+        include '../koneksi.php';
 
-        // Query to select all entries from the fertilizer table
+        // Query to select all entries from the kalkulator_pupuk table
         $query_mysql = mysqli_query($mysqli, "SELECT * FROM kalkulator_pupuk") or die(mysqli_error($mysqli));
 
         // Loop through the rows and display the data
         while ($data = mysqli_fetch_array($query_mysql)) {
         ?>
             <tr>
-                <td><?php echo $data['id']; ?></td>
-                <td><?php echo $data['id_user']; ?></td>
-                <td><?php echo $data['luas_lahan']; ?></td>
-                <td><?php echo $data['banyak_pupuk']; ?></td>
+                <td><?php echo htmlspecialchars($data['luas_lahan']); ?></td>
+                <td><?php echo htmlspecialchars($data['banyak_pupuk']); ?></td>
                 <td>
                     <a href='edit_kalkulator.php?id=<?php echo $data['id']; ?>'><button class="update">Edit</button></a>
                     <a href='delete_kalkulator.php?id=<?php echo $data['id']; ?>'><button class="delete">Delete</button></a>
@@ -158,4 +177,3 @@
     </table>
 </body>
 </html>
-            
